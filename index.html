@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr" class="scroll-smooth">
 <head>
@@ -10,7 +11,7 @@
     <style>
         /* Genel Stil Ayarları */
         body {
-            font-family: 'Poppins', sans-serif; /* Roboto yerine daha modern Poppins */
+            font-family: 'Poppins', sans-serif; 
             line-height: 1.6;
             -webkit-font-smoothing: antialiased; /* Metinlerin daha pürüzsüz görünmesi için */
         }
@@ -339,14 +340,14 @@ Web tasarım konusunda temel ve orta düzeyde bilgi sahibiyim. HTML, CSS, JavaSc
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // Smooth scroll for internal links
+          
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
-                    // Close mobile menu after clicking a link
+                  
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                     }
@@ -356,3 +357,84 @@ Web tasarım konusunda temel ve orta düzeyde bilgi sahibiyim. HTML, CSS, JavaSc
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batuhan Ünsal | Siber Güvenlik Uzmanı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .matrix-bg {
+      background: radial-gradient(#0f172a, #000);
+    }
+  </style>
+</head>
+<body class="matrix-bg text-white">
+  <!-- HERO -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center p-6">
+    <h1 class="text-4xl md:text-6xl font-bold font-[Orbitron] animate-pulse">Batuhan Ünsal</h1>
+    <p class="mt-4 text-lg md:text-2xl max-w-2xl">Siber Güvenlik Uzmanı | Pentester | Blog Yazarı</p>
+    <a href="#iletisim" class="mt-8 px-6 py-3 bg-green-500 hover:bg-green-600 text-black rounded-xl transition-all">İletişime Geç</a>
+  </section>
+
+  <!-- HAKKIMDA -->
+  <section class="py-20 px-6 bg-black/40">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block mb-6">Hakkımda</h2>
+      <p class="text-gray-300 text-lg leading-relaxed">Ben Batuhan, siber güvenlik ve etik hacker alanında uzmanım. Red team ve pentest alanında çalışıyor, aynı zamanda blog yazılarımla bilgi paylaşıyorum. Güvenlik açıkları, zafiyet analizleri ve savunma stratejileri hakkında içerik üretiyorum.</p>
+    </div>
+  </section>
+
+  <!-- PROJELER -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block mb-6">Projeler</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-900 rounded-xl p-6 hover:scale-105 transition-transform shadow-xl">
+          <h3 class="text-xl font-semibold text-green-400 mb-2">Zafiyet Tespit Aracı</h3>
+          <p>Python tabanlı bu araç, web uygulamalarındaki yaygın açıkları otomatik olarak tarar.</p>
+        </div>
+        <div class="bg-gray-900 rounded-xl p-6 hover:scale-105 transition-transform shadow-xl">
+          <h3 class="text-xl font-semibold text-green-400 mb-2">BurpSuite Eklentisi</h3>
+          <p>Kendi yazdığım Burp eklentisi ile özel payload dizileri ve zafiyet pattern'ları oluşturabiliyorum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="py-20 px-6 bg-black/40">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block mb-6">Son Blog Yazıları</h2>
+      <ul class="space-y-4">
+        <li><a href="#" class="text-lg text-green-300 hover:underline">Siber Güvenlikte En Sık Görülen Zafiyetler</a></li>
+        <li><a href="#" class="text-lg text-green-300 hover:underline">Kali Linux ile Hızlı Pentest Notları</a></li>
+        <li><a href="#" class="text-lg text-green-300 hover:underline">Nmap ve Script Kullanımı ile Derin Taramalar</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section id="iletisim" class="py-20 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block mb-6">İletişim</h2>
+      <p class="mb-4">Benimle iletişime geçmek için aşağıdaki adresleri kullanabilirsin:</p>
+      <div class="space-y-2">
+        <p><strong>Email:</strong> batuhanunsal@example.com</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/batuhanunsal</p>
+        <p><strong>GitHub:</strong> github.com/batuhanunsal</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-400 py-6 border-t border-gray-700">
+    © 2025 Batuhan Ünsal - Tüm Hakları Saklıdır
+  </footer>
+</body>
+</html>
+
