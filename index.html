@@ -57,43 +57,43 @@
         .section-heading {
             position: relative;
             display: inline-block;
-            margin-bottom: 2.5rem; /* mb-6 yerine daha büyük boşluk */
+            margin-bottom: 2.5rem; 
         }
 
         .section-heading::after {
             content: '';
             position: absolute;
-            bottom: -8px; /* Alt çizginin başlığa yakınlığı */
+            bottom: -8px; 
             left: 0;
-            width: 80%; /* Alt çizginin genişliği */
+            width: 80%; 
             height: 4px;
-            background-color: #22c55e; /* Yeşil çizgi */
+            background-color: #22c55e; 
             border-radius: 2px;
         }
 
-        /* Daha İyi Hover Efektleri */
+    
         .project-card:hover, .service-card:hover {
-            transform: translateY(-8px) scale(1.02); /* Hafif yukarı ve büyütme */
-            box-shadow: 0 15px 30px rgba(0, 255, 0, 0.2); /* Yeşil gölge */
+            transform: translateY(-8px) scale(1.02); 
+            box-shadow: 0 15px 30px rgba(0, 255, 0, 0.2); 
         }
 
         .blog-link:hover {
-            color: #84cc16; /* Hover'da farklı yeşil tonu */
-            transform: translateX(5px); /* Hafif sağa kaydırma */
+            color: #84cc16; 
+            transform: translateX(5px); 
         }
 
-        /* Ekstra ikon stili */
+        
         .icon-link {
             transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
         }
 
         .icon-link:hover {
             transform: translateY(-3px);
-            color: #22c55e; /* Yeşil renk */
+            color: #22c55e; 
         }
 
-        /* Mobil Duyarlılık İçin Özel Ayarlamalar */
-        @media (max-width: 768px) { /* Medium ekran (md) altı için */
+        
+        @media (max-width: 768px) { 
             .hero h1 {
                 font-size: 3rem; /* 48px */
             }
@@ -140,7 +140,7 @@
 
     <nav class="fixed w-full top-0 left-0 bg-black/70 z-50 py-4 shadow-lg backdrop-blur-sm">
         <div class="container mx-auto flex justify-between items-center px-6">
-            <a href="#hero" class="text-2xl font-bold font-[Orbitron] text-green-500">B.Ünsal</a>
+        
             <div class="hidden md:flex space-x-6">
                 <a href="#hakkimda" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Hakkımda</a>
                 <a href="#projeler" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Projeler</a>
