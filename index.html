@@ -113,7 +113,7 @@
             .project-card p, .service-card p {
                 font-size: 0.95rem; /* Daha küçük paragraf metinleri */
             }
-            .blog-link {
+            .+-link {
                 font-size: 1rem; /* Blog linkleri için mobil font boyutu */
                 line-height: 1.4; /* Satır aralığını ayarla */
             }
@@ -138,20 +138,20 @@
 </head>
 <body class="matrix-bg text-white">
 
-    <nav class="fixed w-full top-0 left-0 bg-black/70 z-50 py-4 shadow-lg backdrop-blur-sm">
-        <div class="container mx-auto flex justify-between items-center px-6">
+    <nav class="fixed w-full top-0 left-0  z-50 py-4 shadow-lg backdrop-blur-sm">
+        <div class="container mx-auto flex  items-center px-6 justify-end ">
         
-            <div class="hidden md:flex space-x-6">
-                <a href="#hakkimda" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Hakkımda</a>
-                <a href="#projeler" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Projeler</a>
-                <a href="#hizmetler" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Hizmetler</a>
-                <a href="#blog" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Blog</a>
-                <a href="#iletisim" class="text-gray-300 hover:text-green-400 transition-colors text-lg">İletişim</a>
-            </div>
-            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-green-400 focus:outline-none">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
+   <div class="hidden md:flex space-x-6 ">
+    <a href="#hakkimda" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Hakkımda</a>
+    <a href="#projeler" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Projeler</a>
+    <a href="#hizmetler" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Hizmetler</a>
+    <a href="#blog" class="text-gray-300 hover:text-green-400 transition-colors text-lg">Blog</a>
+    <a href="#iletisim" class="text-gray-300 hover:text-green-400 transition-colors text-lg">İletişim</a>
+</div>
+<button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-green-400 focus:outline-none">
+    <i class="fas fa-bars text-2xl"></i>
+</button>
+
         <div id="mobile-menu" class="hidden md:hidden bg-black/80 py-4 text-center">
             <a href="#hakkimda" class="block py-2 text-lg hover:text-green-400 transition-colors">Hakkımda</a>
             <a href="#projeler" class="block py-2 text-lg hover:text-green-400 transition-colors">Projeler</a>
@@ -173,7 +173,7 @@
     <a href="#iletisim" class="w-full md:w-auto px-8 py-4 bg-green-500 hover:bg-green-600 text-black font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-green-700/50">
         <i class="fas fa-paper-plane mr-2"></i> İletişime Geç
     </a>
-    <a href="#projeler" class="w-full md:w-auto px-8 py-4 border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-black font-semibold rounded-full transition-all duration-300">
+    <a href="#projeler" class="w-full md:w-auto px-8 py-4 border-2 border-green-500 text-green-500 hover:bg-orange-500 hover:text-black font-semibold rounded-full transition-all duration-300">
         <i class="fas fa-code mr-2"></i> Projelerimi Gör
     </a>
 </div>
@@ -283,12 +283,22 @@ Web tasarım konusunda temel ve orta düzeyde bilgi sahibiyim. HTML, CSS, JavaSc
                 Dijital dünyadaki öğrenme yolculuğumu ve deneyimlerimi paylaşacağım blog bölümüm şu anda yapım aşamasında. Siber güvenlik, web tasarım ve teknoloji alanlarındaki güncel konuları ele alacağım yazılar çok yakında burada olacak!
             </p>
             <ul class="space-y-6">
-                <li class="fade-in-down" style="animation-delay: 0.2s;"><span class="text-xl text-gray-400">
-                    <i class="fas fa-hourglass-start mr-3 text-green-400"></i> Siber Güvenlik Temelleri: İlk Adımlar (Yakında)
-                </span></li>
-                <li class="fade-in-down" style="animation-delay: 0.4s;"><span class="text-xl text-gray-400">
-                    <i class="fas fa-pen-nib mr-3 text-green-400"></i> Modern Web Tasarımında Temiz Kodun Önemi (Yakında)
-                </span></li>
+<li class="fade-in-down" style="animation-delay: 0.2s;">
+  <a href="https://kvkk.com.tc/kvkk-danismani-secerken-nelere-dikkat-edilmeli" target="_blank" class="block hover:underline">
+    <span class="text-xl text-gray-400">
+<i class="fas fa-user-shield mr-3 text-green-400"></i>
+      KVKK Danışmanı Seçerken Nelere Dikkat Edilmeli?
+    </span>
+  </a>
+</li>       
+<li class="fade-in-down" style="animation-delay: 0.4s;">
+  <a href="https://kvkk.com.tc/siber-guvenlik-ile-kvkk-arasindaki-kritik-ve-hayati-iliskisi/" target="_blank" class="block hover:underline">
+    <span class="text-xl text-gray-400">
+    <i class="fas fa-lock mr-3 text-green-400"></i>
+     Siber Güvenlik ile KVKK Arasındaki Kritik ve Hayati İlişkisi
+    </span>
+  </a>
+</li>
                 <li class="fade-in-down" style="animation-delay: 0.6s;"><span class="text-xl text-gray-400">
                     <i class="fas fa-lock-open mr-3 text-green-400"></i> Basit Web Zafiyetleri ve Korunma Yöntemleri (Yakında)
                 </span></li>
@@ -296,11 +306,7 @@ Web tasarım konusunda temel ve orta düzeyde bilgi sahibiyim. HTML, CSS, JavaSc
                     <i class="fas fa-brush mr-3 text-green-400"></i> Tailwind CSS ile Hızlı ve Responsive Tasarım (Yakında)
                 </span></li>
                 </ul>
-            <div class="text-center mt-10 fade-in-down" style="animation-delay: 1s;">
-                <span class="px-6 py-3 bg-gray-700 text-gray-400 rounded-full cursor-not-allowed">
-                    Tüm Yazılarım Yakında <i class="fas fa-spinner fa-spin ml-2"></i>
-                </span>
-            </div>
+            
         </div>
     </section>
 
@@ -316,7 +322,7 @@ Web tasarım konusunda temel ve orta düzeyde bilgi sahibiyim. HTML, CSS, JavaSc
                     Email: <a href="mailto:batuhanunsal30@gmail.com" class="text-green-300 hover:underline">batuhanunsal30@gmail.com</a>
                 </p>
                 <div class="flex justify-center space-x-8 text-4xl mt-8">
-                    <a href="https://linkedin.com/in/batuhanunsall" target="_blank" rel="noopener noreferrer" class="icon-link text-gray-300 hover:text-green-500">
+                    <a href="https://linkedin.com/in/batuhanunsall" target="_blank" rel="noopener noreferrer" class="icon-link text-gray-300 hover:text-green-500 ">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/batuhanunsall" target="_blank" rel="noopener noreferrer" class="icon-link text-gray-300 hover:text-green-500">
